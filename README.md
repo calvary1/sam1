@@ -10,4 +10,4 @@ This is an example demonstrating my interest:
 * downloading yarn
 * learn html  and codes from MDN web docs
 * you need to be skillful after a while
-*every success comes at a cost
+* every success comes at a cost

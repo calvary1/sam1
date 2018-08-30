@@ -51,8 +51,38 @@
       </ul>
       <h1>Giraffe lifespan</h1>
       <p>Giraffes have high adult survival probability, and an unusually long lifespan compared to other ruminants, up to 25 years in the wild. Because of their size, eyesight and powerful kicks, adult giraffes are usually not subject to predation, aside from lions.</p>
-    </ol>
+    
   </div>
+
+  function rendergiraffe(article) {
+    var div = document.createElement('div')
+    var h1 = document.createElement('h1')
+    var p = document.createElement('p')
+
+    div.appendChild(h1)
+    div.appendChild(p)
+
+    var title = document.createTextNode(article.title)
+    var content = document.createTextNode(article.content)
+
+    h1.appendChild(title)
+    p.appendChild(content)
+
+    return div
+  }
+
+  function renderArticles(articles) {
+    var div = document.createElement('div')
+    for (var i = 0; i < articles.length; i = i + 1) {
+      var article = articles[i]
+      var component = renderArticle(article)
+      div.appendChild(component)
+    }
+    return div
+  }
+
+  document.body.appendChild(renderArticles(articles))
+
 
 </body>
 

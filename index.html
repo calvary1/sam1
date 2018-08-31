@@ -55,14 +55,10 @@
   </div>
 
   function rendergiraffe(giraffes) {
-    var div = document.createElement('div')
-    var h1 = document.createElement('h1')
-    var p = document.createElement('p')
-
-    div.appendChild(h1)
-    div.appendChild(p)
-
-    var title = document.createTextNode(article.title)
+    var div = giraffes.html('div')
+    var h1 = giraffe class="html"('h1')
+    var p = giraffe class="html"('p')
+    
     var content = document.createTextNode(article.content)
 
     h1.appendChild(title)

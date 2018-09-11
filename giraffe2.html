@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Giraffe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+  <script src="main.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <p><center>
+    Hello world This is my first post. Animals are special creatures that need to be preserved. Each continent of the World has
+    different species of animals. In Some continents of the World some species as gone into extinction because they have
+    been killed. Giraffe is the only animal with the longest neck.
+  </p></center>
+
+  <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/11/how-giraffes-wear-ties-1-1.jpg" />
+  <p>
+    The giraffe is a genuis of African unless exported to other continents of the World. Basically there exists 8 spe
+
+
+
+
+
+</p>
+
+  <img src="big.jpeg" />
+
+  <div id="app-4">
+    <ol>
+      <li v-for="entry in list">
+        <h1>{{ entry.name }}</h1>
+        <img v-bind:src="entry.img" />
+        <p>{{ entry.description }}</p>
+      </li>
+      <ul>
+        <li>kordofan</li>
+        <li>nubian</li>
+        <li>West African</li>
+        <li>reticulated</li>
+        <li>Angolan</li>
+        <li>South African</li>
+        <p> Countries with Zebra giraffes</p>
+        <li>Congo</li>
+        <li>South Africa</li>
+      </ul>
+      <h1>Giraffe lifespan</h1>
+      <p>Giraffes have high adult survival probability, and an unusually long lifespan compared to other ruminants, up to 25 years in the wild. Because of their size, eyesight and powerful kicks, adult giraffes are usually not subject to predation, aside from lions.</p>
+    
+  </div>
+
+  function rendergiraffe(giraffes) {
+    var div = giraffes.html('div')
+    var h1 = giraffe class="html"('h1')
+    var p = giraffe class="html"('p')
+    
+    var content = document.createTextNode(article.content)
+
+    h1.appendChild(title)
+p.appendChild(content)
+
+    return div
+  }
+
+  function rendergiraffe(giraffes) {
+    var div = document.createElement('div')
+    for (var i = 0; i < articles.length; i = i + 1) {
+      var article = articles[i]
+      var component = renderArticle(article)
+      div.appendChild(component)
+    }
+    return div
+  }
+
+  document.body.appendChild(renderArticles(articles))
+
+</body>
+
+</html>
+

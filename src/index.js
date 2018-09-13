@@ -16,3 +16,11 @@ tabletop.init({
     },
     simpleSheet: true
    })
+   callback: function (tabletopData, tabletop) {
+    var renderedPlaces = renderPlaces(tabletopData)
+    console.log(renderedPlaces)
+    document.getElementById("app-4").appendChild(renderedPlaces)
+}
+
+ simpleSheet: true
+}

@@ -25,6 +25,7 @@
 </head>
 
 <body>
+  <h1>Introduction</h1>
   <p style="color:green;"><center>
     Hello world This is my first post. Animals are special creatures that need to be preserved. Each continent of the World has
     different species of animals. In Some continents of the World some species as gone into extinction because they have
@@ -67,31 +68,39 @@
       <h1 style="background-color:rgb(255, 99, 71);"></h1>
   </div>
 
-  function rendergiraffe(giraffes) {
-    var div = kordofan('div')
-    var h1 = kordofan('h1')
-    var p = kordofan('p')
-    
-    var content = document.createTextNode(giraffe.kordofan)
+  function renderArticle(article) {
+    var div = document.createElement('div')
+    var h1 = document.createElement('Introduction')
+    var p = document.createElement('p')
+
+    div.appendChild(Introduction)
+    div.appendChild(p)
+
+    var title = document.createTextNode(article.Giraffe)
+    var content = document.createTextNode(article.paragraph)
 
     h1.appendChild(Giraffe)
-p.appendChild(kordofan)
+    p.appendChild(paragraph)
 
     return div
   }
 
- /* function rendergiraffe(giraffes) {
-    var div = kordofan('div')
+  function renderArticles(articles) {
+    var div = document.createElement('div')
     for (var i = 0; i < articles.length; i = i + 1) {
       var article = articles[i]
-      var component = renderArticle(giraffe)
-      div.appendChild(kordofan)
+      var component = renderArticle(paragraph)
+      div.appendChild(component)
     }
     return div
- */ }
+  }
+  document.body.appendChild(renderArticles(paragraphs))
 
-  document.body.appendChild(renderArticles(giraffes))
 
+
+    
+
+  
 
 
   

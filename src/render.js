@@ -1,16 +1,18 @@
 var crel = require('crel')
-
 function renderApp(data) {
-    document.getElementById("div")
-    <div; id = "kordofan">
-   for (var i = 0; i = i +1) {
-    ( crel = giraffe)
-
-   }
-
-    return crel('h1', 'kordofan')
+   { var i;
+    var x = document.getElementById("giraffe")
+    for(i = 0; i<x.length; i=i+1)
 }
 
-console.log(kordofan)
+
+document.gotElementaryById(giraffe)
+       ( crel = "giraffe");
+   }
+
+    return crel('h1', 'giraffe'){
+}
+
+console.log(giraffe)
 module.exports = renderApp
 
